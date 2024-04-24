@@ -23,56 +23,77 @@
             <h2>Gallery</h2>
             <p>Here are some highlights of my work. The locations and year are in the caption.</p>
             <div class="gallery-grid">
-                <div class="photo">
+                <div class="photo" id="chile">
                     <img src="images/Chile.png" alt="Chile, 2001">
-                    <p>Chile, 2001</p>
+                    <p class="caption bottom white">Chile, 2001</p>
                 </div>
-                <div class="photo">
+                <div class="photo" id="guatemala">
                     <img src="images/Guatemala.png" alt="Guatemala, 1997">
-                    <p>Guatemala, 1997</p>
+                    <p class="caption top white">Guatemala, 1997</p>
                 </div>
-                <div class="photo">
+                <div class="photo" id="hawaii">
                     <img src="images/Hawaii.png" alt="Hawaii, 2010">
-                    <p>Hawaii, 2010</p>
+                    <p class="caption bottom white">Hawaii, 2010</p>
                 </div>
-                <div class="photo">
+                <div class="photo" id="iran">
                     <img src="images/Iran.png" alt="Iran, 1999">
-                    <p>Iran, 1999</p>
+                    <p class="caption top black">Iran, 1999</p>
                 </div>
-                <div class="photo">
+                <div class="photo" id="ireland">
                     <img src="images/Ireland.png" alt="Ireland, 2012">
-                    <p>Ireland, 2012</p>
+                    <p class="caption top black">Ireland, 2012</p>
                 </div>
-                <div class="photo">
+                <div class="photo" id="italy">
                     <img src="images/Italy.png" alt="Italy, 2015">
-                    <p>Italy, 2015</p>
+                    <p class="caption bottom black">Italy, 2015</p>
                 </div>
-                <div class="photo">
+                <div class="photo" id="moab-desert">
                     <img src="images/Moab-Desert.png" alt="Moab Desert, 2020">
-                    <p>Moab Desert, 2020</p>
+                    <p class="caption bottom white">Moab Desert, 2020</p>
                 </div>
-                <div class="photo">
+                <div class="photo" id="rocky-mountains">
                     <img src="images/Rocky-Mountains.png" alt="Rocky Mountains, 2009">
-                    <p>Rocky Mountains, 2009</p>
+                    <p class="caption top black">Rocky Mountains, 2009</p>
                 </div>
-                <div class="photo">
+                <div class="photo" id="switzerland">
                     <img src="images/Switzerland.png" alt="Switzerland, 2014">
-                    <p>Switzerland, 2014</p>
+                    <p class="caption top black">Switzerland, 2014</p>
                 </div>
-                <div class="photo">
+                <div class="photo" id="uk">
                     <img src="images/UK.png" alt="UK, 2005">
-                    <p>UK, 2005</p>
+                    <p class="caption top black">UK, 2005</p>
                 </div>
-                <div class="photo">
+                <div class="photo" id="usa">
                     <img src="images/USA.png" alt="USA, 2021">
-                    <p>USA, 2021</p>
+                    <p class="caption top black">USA, 2021</p>
                 </div>
-                <div class="photo">
+                <div class="photo" id="wyoming">
                     <img src="images/Wyoming.png" alt="Wyoming, 2021">
-                    <p>Wyoming, 2021</p>
+                    <p class="caption top white">Wyoming, 2021</p>
                 </div>
             </div>
         </div>
+        <div class="content" id="contact">
+            <h2>Contact</h2>
+            <p>Please fill out this form and I'll connect with you soon.</p>
+            <form>
+                <div>
+                    <label for="name">Name</label><br>
+                    <input type="text" id="name" name="name" placeholder="Your full name">
+                </div>
+                <div>
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address">
+                </div>
+                <div>
+                    <label for="message">Message</label><br>
+                    <textarea id="message" name="message" placeholder="What can I help you with?"></textarea>
+                </div>
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+        </div>
+        
     </div>
+    
 </body>
 </html>

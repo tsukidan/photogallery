@@ -1,12 +1,12 @@
-:root{
+:root {
     --font-fam: 'Arial', 'Helvetica', sans-serif;
     --green: #007d7b;
 
     --font-p: 1.25em;
     --font-small: 1em;
     --font-nav: 1.5em;
-    --font-h1:3em;
-    --font-h2:2em;
+    --font-h1: 3em;
+    --font-h2: 2em;
 }
 
 body {
@@ -17,11 +17,16 @@ body {
     display: flex;
     justify-content: center;
 }
+#about p,
+#gallery p {
+font-size: var(--font-p);
+}
 .container {
     width: 100%;
     max-width: 1300px;
     background-color: white;
 }
+
 header {
     background-color: #f8f9fa;
     padding: 10px 20px;
@@ -31,11 +36,13 @@ header {
     color: var(--green);
     font-family: var(--font-fam);
 }
+
 nav {
     background-color: #000000;
     padding: 20px 20px;
     text-align: right;
 }
+
 nav a {
     color: white;
     text-decoration: none;
@@ -44,15 +51,20 @@ nav a {
     font-weight: 700;
     text-transform: uppercase;
 }
+
 nav a:hover {
     background-color: #0056b3;
 }
+
 .content {
     padding: 20px;
     text-align: left;
 }
-h2{
-text-align: center;
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: var(--font-h2);
 }
 
 .gallery-grid {
@@ -61,15 +73,121 @@ text-align: center;
     gap: 20px;
 }
 
+.photo {
+    position: relative;
+    overflow: hidden;
+}
+
 .photo img {
     width: 100%;
     height: auto;
-
 }
 
 .photo p {
+    position: absolute;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    color: inherit;
     text-align: center;
-    margin-top: 8px;
+    margin: 0;
+    z-index: 1;
+    font-size: var(--font-small)!important;
+}
+#chile .caption.bottom.white,
+#hawaii .caption.bottom.white,
+#italy .caption.bottom.black,
+#moab-desert .caption.bottom.white
+{
+    bottom: 0;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+#wyoming .caption.top.white,
+#iran .caption.top.black,
+#ireland .caption.top.black,
+#rocky-mountains .caption.top.black,
+#switzerland .caption.top.black,
+#uk .caption.top.black,
+#usa .caption.top.black,
+#guatemala .caption.top.white,
+#iran .caption.top.black,
+#ireland .caption.top.black
+{
+    top:0;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#chile .caption.bottom.white,
+#guatemala .caption.top.white,
+#hawaii .caption.bottom.white,
+#moab-desert .caption.bottom.white,
+#wyoming .caption.top.white
+{
+    color: white;
+}
+.submit-button {
+    background-color: var(--green);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+#contact.content
+{
+    background: black;
+}
+#contact h2,
+#contact p{
+    color: white;
+}
+#contact p{
+    text-align: center;
+}
+.content form div {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.content form div {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.content form input[type="text"],
+.content form input[type="email"],
+.content form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    padding: 10px; 
+    color: var(--green);
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.content form label {
+    color: white;
+    text-transform: uppercase;
+}
+.content form button {
+    width: 50%;
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: var(--green);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    text-transform: uppercase; 
+}
+.submit-button:hover {
+    background-color: #0056b3;
 }
 
 @media (max-width: 1300px) {
